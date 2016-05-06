@@ -11,6 +11,7 @@
         <meta name="author" content="ApiFocal" />
 
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+        <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/railscasts.css">
         <link href="css/impress-demo.css" rel="stylesheet" />
         
         <link rel="shortcut icon" href="favicon.ico" />
@@ -23,157 +24,687 @@
         </div>
 
         <div id="impress">
-            <div id="intro" class="step slide" data-x="-1024" data-y="-1500">
+            <!--intro-->
+            <div id="intro" class="step slide slide-1" data-x="-1024" data-y="-1500">
+                <div class="content alt">
+                    <div class="inner">
+                        <img src="img/slides/intro.jpg" width="1024" height="768" alt="" />
+                    </div>
+                </div>
+            </div>
+            <!--/intro-->
+
+            <!--slide 1-->
+            <div class="step slide slide-2" data-x="0" data-y="-1500">
                 <header>
                     <img src="img/logo.png" />
-                    <h2>Messaging 101</h2>
+                    <h2>Cloud Computing</h2>
+                </header>
+                <div class="content">
+                    <div class="inner">
+                        <blockquote>
+                            <p>"Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. </p>
+                        </blockquote>
+                        <h3 id="nist">The NIST Definition of Cloud Computing</h3>
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 1-->
+
+            <!--slide 2-->
+            <div class="step slide slide-3" data-x="1024" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>Cloud Computing Layers</h2>
                 </header>
                 <div class="content">
                     <img src="img/slides/1.png" width="980" height="600" alt="" />
                 </div>
                 <footer>
-                    <div class="project">ActiveMQ &amp; Karaf in Cloud</div>
-                    <div class="speaker">Hadrian Zbârcea</div>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
                 </footer>
             </div>
+            <!--/slide 2-->
 
-            <div class="step slide" data-x="0" data-y="-1500">
+            <!--slide 3-->
+            <div class="step slide" data-x="2048" data-y="-1500">
                 <header>
                     <img src="img/logo.png" />
-                    <h2>...moving into the digital world</h2>
+                    <h2>Characteristics</h2>
+                    <div>
+                        <a href="http://dx.doi.org/10.6028/NIST.SP.800-145" target="_blank">http://dx.doi.org/10.6028/NIST.SP.800-145</a>
+                    </div>
+                </header>
+                <div class="content">
+                    <div class="text-block">
+                        <h4>On-demand self-service</h4>
+                        <p>A consumer can unilaterally provision computing capabilities, such as server time and network storage, as needed automatically without requiring human interaction with each service provider.</p>
+                        <h4>Broad network access</h4>
+                        <p>Capabilities are available over the network and accessed through standard mechanisms that promote use by heterogeneous thin or thick client platforms (e.g., mobile phones, tablets, laptops, and workstations).</p>
+                        <h4>Resource pooling</h4>
+                        <p>The provider’s computing resources are pooled to serve multiple consumers using a multi-tenant model, with different physical and virtual resources dynamically assigned and reassigned according to consumer demand. There is a sense of location independence in that the customer generally has no control or knowledge over the exact location of the provided resources but may be able to specify location at a higher level of abstraction (e.g., country, state, or datacenter). Examples of resources include storage, processing, memory, and network bandwidth.</p>
+                        <h4>Rapid elasticity</h4>
+                        <p>Capabilities can be elastically provisioned and released, in some cases automatically, to scale rapidly outward and inward commensurate with demand. To the consumer, the capabilities available for provisioning often appear to be unlimited and can be appropriated in any quantity at any time.</p>
+                        <h4>Measured service</h4>
+                        <p>Cloud systems automatically control and optimize resource use by leveraging a metering capability at some level of abstraction appropriate to the type of service (e.g., storage, processing, bandwidth, and active user accounts). Resource usage can be monitored, controlled, and reported, providing transparency for both the provider and consumer of the utilized service.</p>
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 3-->
+
+            <!--slide 4-->
+            <div class="step slide" data-x="3072" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>LEGEND</h2>
                 </header>
                 <div class="content">
                     <img src="img/slides/2.png" width="980" height="600" alt="" />
                 </div>
                 <footer>
-                    <div class="project">ActiveMQ &amp; Karaf in Cloud</div>
-                    <div class="speaker">Hadrian Zbârcea</div>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
                 </footer>
             </div>
+            <!--/slide 4-->
 
-            <div class="step slide" data-x="1024" data-y="-1500">
+            <!--slide 5-->
+            <div class="step slide" data-x="4096" data-y="-1500">
                 <header>
                     <img src="img/logo.png" />
-                    <h2>...moving to the digital world</h2>
+                    <h2>Messaging 101</h2>
                 </header>
                 <div class="content">
                     <img src="img/slides/3.png" width="980" height="600" alt="" />
                 </div>
                 <footer>
-                    <div class="project">ActiveMQ &amp; Karaf in Cloud</div>
-                    <div class="speaker">Hadrian Zbârcea</div>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
                 </footer>
             </div>
+            <!--/slide 6-->
 
-            <div class="step slide" data-x="2048" data-y="-1500">
+            <!--slide 7-->
+            <div class="step slide" data-x="5120" data-y="-1500">
                 <header>
                     <img src="img/logo.png" />
-                    <h2>...moving to the digital world</h2>
+                    <h2>Infrastructure - QoS</h2>
+                </header>
+                <div class="content">
+                    <div class="text-block">
+                        <ul>
+                            <li>
+                                <strong>Addressability</strong> (address management)
+                            </li>
+                            <li>
+                                <strong>Confidentiality</strong> (authentification/authorization)
+                            </li>
+                            <li>
+                                <strong>Guaranteed delivery</strong>
+                            </li>
+                            <li>
+                                <strong>Reliability</strong>
+                            </li>
+                            <li>
+                                <strong>Availability</strong> (scalability)
+                            </li>
+                            <li>
+                                <strong>Metrics</strong> (bills and stamps)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 7-->
+
+            <!--slide 8-->
+            <div class="step slide" data-x="6144" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>Infrastructure - Technology</h2>
                 </header>
                 <div class="content">
                     <img src="img/slides/4.png" width="980" height="600" alt="" />
                 </div>
                 <footer>
-                    <div class="project">ActiveMQ &amp; Karaf in Cloud</div>
-                    <div class="speaker">Hadrian Zbârcea</div>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
                 </footer>
             </div>
+            <!--/slide 8-->
 
-            <div class="step slide" data-x="3072" data-y="-1500">
+            <!--slide 9-->
+            <div class="step slide" data-x="7168" data-y="-1500">
                 <header>
                     <img src="img/logo.png" />
-                    <h2>Crazy topology</h2>
+                    <h2>Messaging Supply Chain</h2>
                 </header>
                 <div class="content">
                     <img src="img/slides/5.png" width="980" height="600" alt="" />
                 </div>
                 <footer>
-                    <div class="project">ActiveMQ &amp; Karaf in Cloud</div>
-                    <div class="speaker">Hadrian Zbârcea</div>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
                 </footer>
             </div>
+            <!--/slide 9-->
 
-            <div class="step slide" data-x="4096" data-y="-1500">
+            <!--slide 10-->
+            <div class="step slide" data-x="8192" data-y="-1500">
                 <header>
                     <img src="img/logo.png" />
-                    <h2>Network of brokers</h2>
+                    <h2>The Digital World</h2>
                 </header>
                 <div class="content">
                     <img src="img/slides/6.png" width="980" height="600" alt="" />
                 </div>
                 <footer>
-                    <div class="project">ActiveMQ &amp; Karaf in Cloud</div>
-                    <div class="speaker">Hadrian Zbârcea</div>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
                 </footer>
             </div>
+            <!--/slide 10-->
 
-            <div class="step slide" data-x="5120" data-y="-1500">
+            <!--slide 11-->
+            <div class="step slide" data-x="9216" data-y="-1500">
                 <header>
                     <img src="img/logo.png" />
-                    <h2>...moving to the digital world</h2>
+                    <h2>Apache ActiveMQ</h2>
                 </header>
                 <div class="content">
                     <img src="img/slides/7.png" width="980" height="600" alt="" />
                 </div>
                 <footer>
-                    <div class="project">ActiveMQ &amp; Karaf in Cloud</div>
-                    <div class="speaker">Hadrian Zbârcea</div>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
                 </footer>
             </div>
+            <!--/slide 11-->
 
-            <div class="step slide" data-x="6144" data-y="-1500">
+            <!--slide 12-->
+            <div class="step slide" data-x="10240" data-y="-1500">
                 <header>
                     <img src="img/logo.png" />
-                    <h2>...or various combinations</h2>
+                    <h2>ActiveMQ - Features</h2>
+                </header>
+                <div class="content">
+                    <div class="text-block">
+                        <dl>
+                            <dt>Based on Open Standards</dt>
+                            <dd>
+                                JMS 1.1, AMQP, HTTP, XML...
+                            </dd>
+                            <dt>Extensible, Pluggable Architecture</dt>
+                            <dd>
+                                Configuration <br />
+                                Discovery <br />
+                                Transports <br />
+                                Persistence <br />
+                                Security
+                            </dd>
+                            <dt>Guaranteed delivery</dt>
+                            <dt>Availability (topologies)</dt>
+                            <dt>Resiliency (failover)</dt>
+                            <dt>Message Processing (Apache Camel)</dt>
+                            <dt>Streaming</dt>
+                            <dt>Governance (management, monitoring)</dt>
+                        </dl>
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 12-->
+
+            <!--slide 13-->
+            <div class="step slide" data-x="11264" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>ActiveMQ - Client Bindings</h2>
                 </header>
                 <div class="content">
                     <img src="img/slides/8.png" width="980" height="600" alt="" />
                 </div>
                 <footer>
-                    <div class="project">ActiveMQ &amp; Karaf in Cloud</div>
-                    <div class="speaker">Hadrian Zbârcea</div>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
                 </footer>
             </div>
+            <!--/slide 13-->
 
-            <div class="step slide" data-x="7168" data-y="-1500">
+            <!--slide 14-->
+            <div class="step slide" data-x="12288" data-y="-1500">
                 <header>
                     <img src="img/logo.png" />
-                    <h2>...or various combinations</h2>
+                    <h2>ActiveMQ - Client Bindings</h2>
                 </header>
                 <div class="content">
                     <img src="img/slides/9.png" width="980" height="600" alt="" />
                 </div>
                 <footer>
-                    <div class="project">ActiveMQ &amp; Karaf in Cloud</div>
-                    <div class="speaker">Hadrian Zbârcea</div>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
                 </footer>
             </div>
+            <!--/slide 14-->
 
-            <div class="step slide" data-x="8192" data-y="-1500">
+            <!--slide 15-->
+            <div class="step slide" data-x="13312" data-y="-1500">
                 <header>
                     <img src="img/logo.png" />
-                    <h2>...or various combinations</h2>
-                </header>
-                <div class="content">
-                    <img src="img/slides/10.png" width="980" height="600" alt="" />
-                </div>
-                <footer>
-                    <div class="project">ActiveMQ &amp; Karaf in Cloud</div>
-                    <div class="speaker">Hadrian Zbârcea</div>
-                </footer>
-            </div>
-
-            <div class="step slide" data-x="9216" data-y="-1500">
-                <header>
-                    <img src="img/logo.png" />
-                    <h2>...or various combinations</h2>
+                    <h2>ActiveMQ - Topologies</h2>
                 </header>
                 <div class="content">
                     <img src="img/slides/11.png" width="980" height="600" alt="" />
                 </div>
                 <footer>
-                    <div class="project">ActiveMQ &amp; Karaf in Cloud</div>
-                    <div class="speaker">Hadrian Zbârcea</div>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 15-->
+
+            <!--slide 16-->
+            <div class="step slide" data-x="14336" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>ActiveMQ - Reliability</h2>
+                </header>
+                <div class="content">
+                    <img src="img/slides/10.png" width="980" height="600" alt="" />
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 16-->
+
+            <!--slide 17-->
+            <div class="step slide" data-x="15360" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>ActiveMQ - Deployment</h2>
+                </header>
+                <div class="content">
+                    <div class="text-block">
+                        <dl>
+                            <dt>Standalone</dt>
+                            <dd>&nbsp;<br />&nbsp;</dd>
+                            <dt>Embedded</dt>
+                            <dd><em>Your own app, or...</em></dd>
+                            <dd>&nbsp;<br />&nbsp;</dd>
+                        </dl>
+                        <img src="img/slides/12.png" width="917" height="136" alt="" style="margin-left: -40px;" />
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 17-->
+
+            <!--slide 18-->
+            <div class="step slide" data-x="16384" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>ActiveMQ - Monitoring</h2>
+                </header>
+                <div class="content">
+                    <img src="img/slides/13.png" width="980" height="600" alt="" />
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 18-->
+
+            <!--slide 19-->
+            <div class="step slide" data-x="17408" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>Karaf</h2>
+                </header>
+                <div class="content">
+                    <img src="img/slides/14.png" width="980" height="600" alt="" />
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 19-->
+
+            <!--slide 20-->
+            <div class="step slide" data-x="18432" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>Karaf - Features</h2>
+                </header>
+                <div class="content">
+                    <div class="text-block">
+                        <ul class="alt">
+                            <li>
+                                <strong>Hot deployment:</strong> simply drop a file in the deploy directory
+                            </li>
+                            <li>
+                                <strong>Complete Console:</strong> complete Unix-like console for managing the container
+                            </li>
+                            <li>
+                                <strong>Dynamic Configuration:</strong> extensible set of commands focused on managing configuration
+                            </li>
+                            <li>
+                                <strong>Advanced Logging System:</strong> supports all the popular logging frameworks (slf4j, log4j, etc)
+                            </li>
+                            <li>
+                                <strong>Provisioning:</strong> supports a large set of URLs where you can install your applications, plus 'features' and 'profiles"
+                            </li>
+                            <li>
+                                <strong>Management:</strong> enterprise-ready container, providing management metrics and operations via JMX
+                            </li>
+                            <li>
+                                <strong>Remote:</strong> embeds an SSHd server for remote operations
+                            </li>
+                            <li>
+                                <strong>Security:</strong> complete security framework (based on JAAS) and RBAC (Role-Based Access Control) mechanism
+                            </li>
+                            <li>
+                                <strong>Instances:</strong> multiple instances managed directly from a main instance (root).<br />OSGi frameworks: Apache Felix Framework or Equinox
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 20-->
+
+            <!--slide 21-->
+            <div class="step slide" data-x="19456" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>Karaf Decanter - Overview</h2>
+                </header>
+                <div class="content">
+                    <div class="text-block">
+                        <h2>Default implementation based on ELK</h2>
+                        <br />
+                        <img src="img/slides/15.png" style="float: right; margin: 140px 50px 0 0;" />
+                        <dl>
+                            <dt>Collectors</dt>
+                            <dd>
+                                <p>Responsible for harvesting monitoring data.</p>
+                                <p>Two kinds:</p>
+                                <ul>
+                                    <li>Event Drive Collectors</li>
+                                    <li>Polled Collectors</li>
+                                </ul>
+                            </dd>
+                            <dt>Appenders</dt>
+                            <dd>
+                                <p>Receive data from the collectors</p>
+                                <p>Responsible to store data in a given backend</p>
+                            </dd>
+                            <dt>Service Level Agreements</dt>
+                            <dd>
+                                <p>Special kind of Appender</p>
+                                <p>Receives harvested data and performs checks upon it.</p>
+                                <ul>
+                                    <li>If check fails, alert event is created and sent to alerters.</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 21-->
+
+            <!--slide 22-->
+            <div class="step slide" data-x="20480" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>Karaf Decanter - Monitoring</h2>
+                </header>
+                <div class="content">
+                    <div class="text-block">
+                        <img src="img/slides/16.png" width="877" height="585" alt="" />
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 22-->
+
+            <!--slide 23-->
+            <div class="step slide" data-x="21504" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>DEMO</h2>
+                </header>
+                <div class="content">
+                    <img src="img/slides/17.png" width="980" height="600" alt="" />
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 23-->
+
+            <!--slide 24-->
+            <div class="step slide" data-x="22528" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>SilkMQ - What’s in a name?</h2>
+                </header>
+                <div class="content">
+                    <img src="img/slides/18-1.png" width="980" height="600" alt="" />
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 24-->
+
+            <!--slide 25-->
+            <div class="step slide" data-x="23552" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>SilkMQ - Topology</h2>
+                </header>
+                <div class="content">
+                    <img src="img/slides/18.png" width="980" height="600" alt="" />
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 25-->
+
+            <!--slide 26-->
+            <div class="step slide" data-x="24576" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>SilkMQ - Broker Monitoring</h2>
+                </header>
+                <div class="content">
+                    <div class="text-block">
+                        <h2>SilkMQ is smooth, shouldn’t monitoring be too?</h2>
+                        <br />
+                        <dl>
+                            <dt>We want Decanter Monitoring to be elastic like SilkMQ</dt>
+                            <dt>Currently Decanter is focussed on individual services</dt>
+                            <dd>
+                                <p>Needs more work...</p>
+                            </dd>
+                            <dt>We want to view message infrastructure at a higher level</dt>
+                            <dd>
+                                <p>How many messages enqueued and dequeued for a project?</p>
+                                <p>Status of pending messages</p>
+                                <p>SLA: What is the throughput and latency for queue XYZ (in a project)?</p>
+                            </dd>
+                            <dt>Tenants are not aware of the physical deployment infrastructure</dt>
+                            <dd>
+                                <p>...nor should they be</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 26-->
+
+            <!--slide 27-->
+            <div class="step slide" data-x="25600" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>SilkMQ - Broker Managementg</h2>
+                </header>
+                <div class="content">
+                    <div class="text-block">
+                        <ul>
+                            <li><strong>Use metrics and plicies to scale elastically</strong></li>
+                            <li><strong>Use a service orchestrator</strong></li>
+                        </ul>
+                        <img src="img/slides/19.png" width="892" height="210" alt="" />
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 27-->
+
+             <!--slide 28-->
+            <div class="step slide" data-x="26624" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>SilkMQ - Broker Discovery</h2>
+                </header>
+                <div class="content">
+                    <div class="text-block">
+                        <blockquote>
+                            <p>"ActiveMQ uses an abstraction called a Discovery Agent to detect remote services such as remote brokers. We can use discovery for JMS clients to auto-detect a Message Broker to connect to, or to provide Networks of Brokers"</p>
+                        </blockquote>
+                        <h2>Multi-step resolution process</h2>
+                        <br />
+                        <dl>
+                            <dt>Host resolution DNS</dt>
+                            <dt>Pluggable resolution logic</dt>
+                            <dd>Multicast, zeroconf, SilkMQ</dd>
+                        </dl>
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 28-->
+
+            <!--slide 29-->
+            <div class="step slide" data-x="27648" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>SilkMQ - Multi-tenancy</h2>
+                </header>
+                <div class="content">
+                    <div class="text-block">
+                        <h2>Model based on users/organizations/teams as commonly seen with Cloud Services</h2>
+                        <br />
+                        <br />
+                        <br />
+                        <img src="img/slides/21.png" width="772" height="165" alt="" />
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 29-->
+
+            <!--slide 30-->
+            <div class="step slide" data-x="28672" data-y="-1500">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>SilkMQ - Demo</h2>
+                </header>
+                <div class="content">
+                    <img src="img/slides/20.png" width="980" height="600" alt="" />
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
+                </footer>
+            </div>
+            <!--/slide 30-->
+
+            <!--slide 31-->
+            <div class="step slide last" data-x="29696" data-y="-1500">
+                <div class="content">
+                    <img src="img/slides/22.png" width="1024" height="768" alt="" />
+                </div>
+            </div>
+            <!--/slide 31-->
+
+            <div class="step slide" data-x="14336" data-y="-1500" style="display: none">
+                <header>
+                    <img src="img/logo.png" />
+                    <h2>Syntax higlighter</h2>
+                </header>
+                <div class="content">
+                    <div class="common">
+	      <pre><code class="xml">&lt;!DOCTYPE html&gt;
+	&lt;title&gt;Title&lt;/title&gt;
+
+	&lt;style&gt;body {width: 500px;}&lt;/style&gt;
+
+	&lt;script type=&quot;application/javascript&quot;&gt;
+	  function $init() {return true;}
+	&lt;/script&gt;
+
+	&lt;body&gt;
+	  &lt;p checked class=&quot;title&quot; id=&#39;title&#39;&gt;Title&lt;/p&gt;
+	  &lt;!-- here goes the rest of the page --&gt;
+	&lt;/body&gt;
+	</code></pre>
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/apifocal.png" />
+                    Vancouver 2016
                 </footer>
             </div>
 
@@ -182,12 +713,22 @@
         <div class="hint">
             <p>Use a spacebar or arrow keys to navigate</p>
         </div>
-        <script>
-        if ("ontouchstart" in document.documentElement) { 
-            document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-        }
-        </script>
+
         <script src="js/impress.js"></script>
-        <script>impress().init();</script>
+        <script src="https://highlightjs.org/static/highlight.pack.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script>
+            if ("ontouchstart" in document.documentElement) { 
+                document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+            }
+
+            impress().init();
+
+            jQuery(document).ready(function() {
+              jQuery('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+              });
+            });
+        </script>
     </body>
 </html>

@@ -101,30 +101,6 @@ b, strong { font-weight: bold }
 i, em { font-style: italic }
 
 /*
-    ... and give links a nice look.
-*/
-a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0 0.1em;
-    background: rgba(255,255,255,0.5);
-    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
-    border-radius: 0.2em;
-
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
-}
-
-a:hover,
-a:focus {
-    background: rgba(255,255,255,1);
-    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
-}
-
-/*
     Because the main point behind the impress.js demo is to demo impress.js
     we display a fallback message for users with browsers that don't support
     all the features required by it.
@@ -176,7 +152,7 @@ a:focus {
     box-sizing:         border-box;
 
     font-family: 'PT Serif', georgia, serif;
-    font-size: 48px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -214,17 +190,19 @@ a:focus {
     padding: 20px;
 
     background-color: white;
-    border: 1px solid rgba(0, 0, 0, .3);
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 
-    color: rgb(102, 102, 102);
+    color: #231f20;
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 1.6;
     letter-spacing: -1px;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .slide q {
@@ -704,40 +682,191 @@ a:focus {
 
 
 header {
-    margin: 40px 0 0 30px;
-    padding: 10px 0 10px 30px;
+    zoom: 1;
+    position: relative;
+    margin: 40px -20px 0 90px;
+    padding: 10px 20px 10px 30px;
     background: #2e333a;
     color: #fff;
 }
 
+header:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    visibility: hidden;
+}
+
 header img {
+    position: absolute;
+    top: -35px;
+    left: -85px;
+}
+
+header h2 {
     float: left;
-    width: 100px;
-    margin: -35px 30px 0 -60px;
+    line-height: 1.2;
+}
+
+header div {
+    float: right;
+    font-size: 18px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content {
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+    min-height: 600px;
+}
+
+.content.alt {
+    margin: -20px 0 0 -20px;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 footer {
     zoom: 1;
     overflow: hidden;
-    width: 94%;
+    width: 96%;
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     left: 0;
     right: 0;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: lighter;
     background: #2e333a;
-    padding: 0 3%;
+    padding: 10px 2%;
     color: #fff;
+    text-align: right;
+    line-height: 34px;
 }
 
-h2 {
-    font-size: 34px;
-}
-
-.project {
+footer img {
     float: left;
 }
 
-.speaker {
-    float: right;
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #e73339;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 0.85em;
+}
+
+.slide {
+    background-image: url("../img/background/3.jpg");
+}
+
+.slide-1,
+.slide.last {
+    background-image: url("../img/background/1.jpg");
+}
+
+.slide-2 {
+    background-image: url("../img/background/2.jpg");
+}
+
+pre {
+    margin-top: 40px;
+    clear: both;
+    height: 580px;
+    overflow-y: auto;
+    font-size: 20px;
+}
+
+blockquote {
+    padding: 0 30px 30px 30px;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.text-block {
+    display: table-cell;
+    padding: 15px 0 20px 90px;
+    vertical-align: middle;
+}
+
+ul {
+    list-style-image: url("../img/icons/arrow.png");
+    font-size: 30px;
+    margin-left: 18px;
+}
+
+ul.alt {
+    font-size: 21px;
+}
+
+li {
+    padding: 20px 0;
+}
+
+ul.alt li {
+    padding: 10px 0;
+}
+
+dl {
+    font-size: 30px;
+}
+
+dt {
+    padding: 0 0 0 20px;
+    font-weight: 500;
+    background: url("../img/icons/arrow.png") center left no-repeat;
+}
+
+dd {
+    padding: 0 0 0 20px;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+dd p {
+    margin-bottom: 10px;
+}
+
+dd ul {
+    font-size: inherit;
+    font-style: italic;
+    margin-left: 20px;
+    list-style: none;
+}
+
+dd ul li {
+    padding: 0 0 10px 0;
+    list-style: none;
+    line-height: 1.4;
+}
+
+#nist {
+    padding: 75px 0 0 0;
+    text-align: center;
+    background: url("../img/icons/cloud.png") top center no-repeat;
+}
+
+.hljs {
+    height: 94%;
 }
