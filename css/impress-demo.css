@@ -756,7 +756,8 @@ footer img {
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 h3 {
@@ -778,7 +779,8 @@ p {
     background-image: url("../img/background/3.jpg");
 }
 
-.slide-1 {
+.slide-1,
+.slide.last {
     background-image: url("../img/background/1.jpg");
 }
 
@@ -811,10 +813,52 @@ blockquote {
 ul {
     list-style-image: url("../img/icons/arrow.png");
     font-size: 30px;
+    margin-left: 18px;
+}
+
+ul.alt {
+    font-size: 21px;
 }
 
 li {
     padding: 20px 0;
+}
+
+ul.alt li {
+    padding: 10px 0;
+}
+
+dl {
+    font-size: 30px;
+}
+
+dt {
+    padding: 0 0 0 20px;
+    font-weight: 500;
+    background: url("../img/icons/arrow.png") center left no-repeat;
+}
+
+dd {
+    padding: 0 0 0 20px;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+dd p {
+    margin-bottom: 10px;
+}
+
+dd ul {
+    font-size: inherit;
+    font-style: italic;
+    margin-left: 20px;
+    list-style: none;
+}
+
+dd ul li {
+    padding: 0 0 10px 0;
+    list-style: none;
+    line-height: 1.4;
 }
 
 #nist {
